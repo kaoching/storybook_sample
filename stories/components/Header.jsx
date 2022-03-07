@@ -30,7 +30,7 @@ export const Header = ({ user, onLogin, onLogout, onCreateAccount }) => (
             />
           </g>
         </svg>
-        <h1>JIMJIMJIMJIM</h1>
+        <h1>TESTTEST</h1>
       </div>
       <div>
         {user ? (
