@@ -10,16 +10,18 @@ export const Button = ({ primary, backgroundColor, size, label, ...props }) => {
     ? 'storybook-button--primary'
     : 'storybook-button--secondary';
   return (
-    <button
-      type="button"
-      className={['storybook-button', `storybook-button--${size}`, mode].join(
-        ' '
-      )}
-      style={backgroundColor && { backgroundColor }}
-      {...props}
-    >
-      {label}
-    </button>
+    <div style={{ margin: '5px' }}>
+      <button
+        type="button"
+        className={['storybook-button', `storybook-button--${size}`, mode].join(
+          ' '
+        )}
+        style={backgroundColor && { backgroundColor }}
+        {...props}
+      >
+        {label}
+      </button>
+    </div>
   );
 };
 
